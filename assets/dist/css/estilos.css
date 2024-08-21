@@ -1,0 +1,252 @@
+.portada{
+    margin-top: 10px;
+    /* width: fit-content; */
+}
+
+.presentacion{
+    display: flex;
+    justify-content: center;
+}
+.presentacion img{
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+}
+.presUñas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.presUñas img{
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+.presPestañas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.presPestañas img{
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+a > .botonGaleria{
+    position: relative;
+    width: 25%; 
+    left: 70%;
+    bottom: 10px;
+    top:-33px;
+}
+a > .botonGaleria2{
+    position: relative;
+    width: 25%; 
+    left: 42%;
+    bottom: 10px;
+    top:-30px;
+}
+.presCorteyColor
+    {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+.presCorteyColor img{
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+a > .botonGaleria3{
+    position: relative;
+    width: 25%; 
+    left: 70%;
+    bottom: 10px;
+  
+}
+.Contacto{
+    display: flex;
+    justify-content: center;
+}
+.Contacto img{
+    display: flex;
+    justify-content: center;
+    width: 99%;
+}
+footer {
+    position: relative;
+    background-color: #DCC8F2;
+    bottom: -100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.texto>img{
+    width: 95%;
+}
+/* footer.container {
+    position: relative;
+    background-color: #DCC8F2;
+    bottom: -100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+} */
+
+
+/*PC*/
+@media screen and (min-width:960px){
+
+    a > .botonGaleria{
+        position: relative;
+        width: 25%; 
+        left: 70%;
+        bottom: 10px;
+        top:-100px;
+    }
+    a > .botonGaleria2{
+        top:-100px;
+    }
+    .portada{
+        display: flex;
+        justify-content: center;
+        --bs-gutter-x:0;
+    }
+    .uñas , .pestañas {
+        margin-top: 50px;
+    }
+    .portada img{
+        width: 100%;
+    }
+    a > .botonGaleria3{
+        top:-105px;
+    }
+    .navbar-expand-md .navbar-collapse{
+        justify-content: right;
+    }
+    .peluqueria{
+        margin-top: 53px;
+    }
+    .navbar-brand{
+
+        --bs-navbar-brand-font-size: 1em;
+        margin-left: 5px;
+    }
+    .volver{
+        display: flex;
+        justify-content: center;
+        margin-bottom: -80px;
+        
+    }
+    .volver a{
+        width: 20%;
+
+    }
+    .navbar-brand{
+        font-size: 1em;
+        margin-left: 5px;
+        font-family: Georgia,serif;
+
+    }
+}
+/*Tablet*/
+@media screen and (min-width:480px) and (max-width:960px){
+    a > .botonGaleria{
+        top:-50px;
+    }
+    a > .botonGaleria2{
+        top:-50px;
+    }
+    a > .botonGaleria3{
+        top:-50px;
+    }
+    .uñas{
+        margin-top: 55px;
+    }
+    .navbar-expand-md .navbar-collapse{
+        justify-content: right;
+    }
+    .pestañas{
+        margin-top: 34px;
+    }
+    .peluqueria{
+        margin-top: 34px;
+    }
+    .Contacto{
+        margin-bottom: -14%;
+    }
+    .Contacto img{
+        display: flex;
+        justify-content: center;
+        width: 99%;
+    }
+    .volver{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .volver a{
+        width: 25%;
+        margin-bottom: -80px;
+
+    }
+    .navbar-brand{
+        font-size: 1em;
+        margin-left: 5px;
+        font-family: Georgia,serif;
+
+    }
+
+}
+
+/*Movil*/
+@media (min-width:200px) and (max-width:480px){
+    
+    a > .botonGaleria{
+        top:-30px;
+    }
+    a > .botonGaleria3{
+        position: relative;
+        width: 25%; 
+        left: 70%;
+        bottom: 10px;
+        top:-23px;
+    }
+    .navbar-brand{
+        font-size: 1em;
+        margin-left: 5px;
+        font-family: Georgia,serif;
+
+    }
+    .uñas{
+        margin-top: 35px;
+    }
+    .pestañas{
+        margin-top: 46px;
+    }
+    .peluqueria{
+        margin-top: 48px;
+    }
+    .Contacto{
+        margin-bottom: -27%;
+    }
+    .volver{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .volver a{
+        width: 30%;
+        margin-bottom: -80px;
+
+    }
+
+    
+
+
+}
