@@ -81,6 +81,9 @@ footer {
     text-align: center;
 
 }
+footer a {
+    text-decoration: none;
+}
 .texto{
     display: flex;
     justify-content: center;
@@ -166,16 +169,16 @@ footer {
         top:-50px;
     }
     .uñas{
-        margin-top: 55px;
+        margin-top: 53px;
     }
     .navbar-expand-md .navbar-collapse{
         justify-content: right;
     }
     .pestañas{
-        margin-top: 34px;
+        margin-top: 30px;
     }
     .peluqueria{
-        margin-top: 34px;
+        margin-top: 30px;
     }
     .Contacto{
         margin-bottom: -14%;
@@ -224,13 +227,13 @@ footer {
 
     }
     .uñas{
-        margin-top: 35px;
+        margin-top: 32px;
     }
     .pestañas{
-        margin-top: 46px;
+        margin-top: 43px;
     }
     .peluqueria{
-        margin-top: 48px;
+        margin-top: 45px;
     }
     .Contacto{
         margin-bottom: -27%;
