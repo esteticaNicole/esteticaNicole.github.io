@@ -223,6 +223,10 @@ footer a {
 
 /*Movil*/
 @media (min-width:200px) and (max-width:480px){
+
+    .nav-link{
+        font-size: 1.4em;
+    }
     
     a > .botonGaleria{
         top:-30px;
