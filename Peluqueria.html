@@ -224,7 +224,18 @@
   <script type="text/javascript">
     $('.swipebox').swipebox();
   </script>
-  <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+  <!--Para el Cierre del navbar-->
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+  </script>
 
 </body>
 
