@@ -27,7 +27,7 @@ images.forEach((item, i) => {
 })
 
 const updateImage = (i) => {
-    let path = `./assets/img/pestañas/img${i+1}.jpg`;
+    let path = `./assets/img/pestañas/img${i+1}.webp`;
 
     largeImage.src = path;
     imageName.innerHTML = path;

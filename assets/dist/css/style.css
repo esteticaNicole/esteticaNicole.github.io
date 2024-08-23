@@ -11,11 +11,14 @@
 body{
     /* width: 100%;
     height: 100vh; */
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     /* background: #ff7a2d; */
     font-family: 'roboto', sans-serif;
+    overflow-y: hidden; 
 }
 main{
     width: 100%;
@@ -165,8 +168,8 @@ main{
 }
 
 
-/*PC*/
-@media screen and (min-width:960px){
+/*PC @media screen and (min-width:960px)*/
+@media screen and (min-width:960px) {
 
     .gallery-image{
         width: 30%;
