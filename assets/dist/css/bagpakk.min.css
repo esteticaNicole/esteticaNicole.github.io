@@ -168,7 +168,8 @@ ul.inline-list li {
 }
 
 .container {
-    padding: 2rem 0
+    padding: 2rem 0;
+    margin-bottom: 100px;
 }
 
 .small-width {

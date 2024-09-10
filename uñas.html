@@ -113,12 +113,6 @@
 </head>
 
 <body>
-
-
-
-
-
-
   <header data-bs-theme="dark">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
@@ -145,16 +139,22 @@
     </nav>
   </header>
 
-  <main>
+  <main class="wrapper">
 
 
     <div class="portada">
       <img src="/assets/img/portada uñas.webp" class="img-fluid uñas" alt="">
     </div>
+
     <div class="texto">
       <img src="/assets/img/texto uñas.webp" alt="">
       <!-- <img src="/assets/img/acrilicas.PNG" alt="">
     <img src="/assets/img/kapping.png" alt=""> -->
+    </div>
+
+    <div id="loader" style="display: none;">
+      <!-- <div class="spinner"></div> -->
+      <div class="hearts"> <img src="/assets/loader/hearts.svg" alt=""></div>
     </div>
 
     <!--Galeria 2-->
@@ -217,7 +217,7 @@
     <!-- FOOTER -->
     <footer>
 
-      <p>Centro de belleza Nicole &copy; 2024 <br> Desarrollado por <a href="#">Digital Project</a></p>
+      <p>Centro de belleza Nicole &copy; 2024 <br> Desarrollado por <a href="https://www.facebook.com/digitalproject10">Digital Project</a></p>
     </footer>
   </main>
 
@@ -229,6 +229,47 @@
     $('.swipebox').swipebox();
   </script>
   <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!--Para el Cierre del navbar-->
+  <script>
+    $(document).ready(function () {
+      $('.navbar-nav a').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+  </script>
+
+ <!--Loader-->
+  <script>
+    // window.addEventListener("load", function () {
+    //   const links = document.querySelectorAll("a");
+    //   links.forEach(link => {
+    //     link.addEventListener("click", function () {
+    //       document.getElementById("loader").style.display = "flex";
+    //     });
+    //   });
+    // });
+    window.addEventListener("load", function() {
+  const links = document.querySelectorAll("a");
+
+  links.forEach(link => {
+    link.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevenir que el enlace cargue la página de inmediato
+
+      document.getElementById("loader").style.display = "flex"; // Mostrar loader
+
+      const href = this.href; // Obtener el enlace
+
+      // Simular una espera breve para mostrar el loader y luego redirigir
+      setTimeout(function() {
+        window.location.href = href; // Redirigir manualmente a la nueva página
+      }, 2000); // Cambia el tiempo según tu preferencia
+    });
+  });
+});
+
+
+  </script>
 
 </body>
 

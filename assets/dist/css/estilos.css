@@ -1,9 +1,46 @@
 body{
     display: flex;
     flex-direction: column;
+    /* height: 100%; */
 }
+
+/* .hearts{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(241, 233, 249);
+} */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: none; /* Cambiado a "flex" al hacer clic */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
 .portada{
-    margin-top: 6px;
+    margin-top: 16px;
     /* width: fit-content; */
 }
 .portada-index{
@@ -74,21 +111,34 @@ a > .botonGaleria3{
 .Contacto{
     display: flex;
     justify-content: center;
+    margin-bottom: 80px;
 }
 .Contacto img{
     display: flex;
     justify-content: center;
     width: 99%;
 }
+
+.wrapper{
+    min-height: 95vh;
+    position: relative; 
+}
 footer {
     /* position: relative; */
     background-color: #DCC8F2;
     /* bottom: -100px; */
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px;
     padding: 1em 0;
-    margin-top: auto;
+    margin-top: auto; */
+
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
     
 
 }
@@ -154,6 +204,9 @@ footer a {
         --bs-navbar-brand-font-size: 1em;
         margin-left: 5px;
     }
+    .nav-link{
+        font-size: 1.5em;
+    }
     .volver{
         display: flex;
         justify-content: center;
@@ -165,14 +218,20 @@ footer a {
 
     }
     .navbar-brand{
-        font-size: 1em;
-        margin-left: 5px;
+        font-size: 1.5em;
+        margin-left: 15px;
         font-family: Georgia,serif;
 
     }
 }
 /*Tablet*/
 @media screen and (min-width:480px) and (max-width:960px){
+    footer{
+        font-size: 1.5em;
+        height: 120px;
+    }
+    p{  margin: 11px 0 1.618rem;
+    }
     a > .botonGaleria{
         top:-50px;
     }
@@ -195,7 +254,7 @@ footer a {
         margin-top: 30px;
     }
     .Contacto{
-        margin-bottom: -14%;
+        margin-bottom: -10%;
     }
     .Contacto img{
         display: flex;
@@ -218,14 +277,27 @@ footer a {
         font-family: Georgia,serif;
 
     }
+    .portada{
+        margin-top: 16px;
+        }
+    .container{
+        margin-bottom: 200px;
+    }     
 
 }
 
 /*Movil*/
 @media (min-width:200px) and (max-width:480px){
+    .navbar-collapse{
+        display: flex;
+        justify-content: center;
+    }
 
     .nav-link{
         font-size: 1.4em;
+    }
+    .portada{
+    margin-top: 16px;
     }
     
     a > .botonGaleria{
@@ -245,7 +317,7 @@ footer a {
 
     }
     .uñas{
-        margin-top: 32px;
+        margin-top: 40px;
     }
     .pestañas{
         margin-top: 40px;
@@ -266,6 +338,9 @@ footer a {
         width: 30%;
         margin-bottom: -80px;
 
+    }
+    p{
+        margin: 11px 0 1.618rem;
     }
     
 
